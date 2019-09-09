@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index1/index1",
+    "pages/confirm/confirm",
+    "pages/getNumber/getNumber",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF9C35",
+    "navigationBarTitleText": "勿忘我奶茶店",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#FF9C35",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/home_s.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+     
+      {
+        "selectedIconPath": "images/mine_s.png",
+        "iconPath": "images/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

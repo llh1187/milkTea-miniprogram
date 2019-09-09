@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-card": "../../vant/card/index",
+    "van-button": "../../vant/button/index",
+    "van-submit-bar": "../../vant/submit-bar-temp/index",
+    "van-popup": "../../vant/popup/index",
+    "van-checkbox": "../../vant/checkbox/index",
+    "van-checkbox-group": "../../vant/checkbox-group/index",
+    "van-radio": "../../vant/radio/index",
+    "van-radio-group": "../../vant/radio-group/index"
+  }
+}

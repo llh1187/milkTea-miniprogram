@@ -1,0 +1,37 @@
+<!--pages/index1/index1.wxml-->
+<view>
+
+  <!-- <image id="firstpic" src="https://user-images.githubusercontent.com/40154001/58705128-d6225d00-83e0-11e9-9232-0947948783fe.jpg" alt="首页图">
+  </image> -->
+  <view wx:for="{{cardlist}}" wx:key="item._id">
+    <van-card num="{{item.num}}" tag="{{item.tag}}" price="{{item.price}}" desc="{{item.desc}}" title="{{item.title}}" thumb="{{ item.imageURL }}">
+      <view slot="footer">
+        <van-button round type="danger" bind:click="add" id="{{item._id}}" detail="1">+</van-button>
+      </view>
+    </van-card>
+  </view>
+  <van-popup  show="{{ show }}" bind:close="onClose">
+    <view id="addshop">
+      请选择下列您喜欢的选项：
+      <view>温度</view>
+      <van-radio-group value="{{ radio1 }}" bind:change="onChange1">
+        <van-radio name="多冰">多冰</van-radio>
+        <van-radio name="少冰">少冰</van-radio>
+        <van-radio name="去冰">去冰</van-radio>
+      </van-radio-group>
+      <text>糖分</text>
+      <van-radio-group value="{{ radio2 }}" bind:change="onChange2">
+        <van-radio name="多糖">多糖</van-radio>
+        <van-radio name="常规">常规</van-radio>
+      </van-radio-group>
+      <van-button bind:click="AddSure" plain type="danger">确定</van-button>
+    </view>
+  </van-popup>
+  <view>
+    <view>---------------------------------------------</view>
+    <view>欢迎光临 勿忘我奶茶店 :)</view>
+    <view>---------------------------------------------</view>
+    <view>---------------------------------------------</view>
+  </view>
+  <van-submit-bar id="vant-submitbar" price="{{totalMoney}}" button-text="提交订单" bind:submit="onSubmit" />
+</view>
